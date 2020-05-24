@@ -1,0 +1,17 @@
+.projects {
+    min-height: 100vh;
+    background-color: #ff4643;
+    font-family: 'Raleway', sans-serif;
+}
+
+.projects-intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .projects-intro h1 {
+    font-weight: 700;
+    font-size: 150px;
+}

@@ -1,0 +1,19 @@
+.intro {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #0077FF;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.intro-title h1 {
+    font-size: 80px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.intro-subtitle h2 {
+    font-style: italic;
+    font-weight: 400;
+}

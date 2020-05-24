@@ -1,0 +1,47 @@
+.about {
+    min-height: 100vh;
+    background-color: #FFEF00;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about .about-intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-intro h1 {
+    font-weight: 700;
+    font-size: 170px;
+}
+
+.about .summary {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.about .summary p {
+    font-size: 26px;
+}
+
+.about .summary .profile-pic {
+    height: 100%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .summary .profile-pic img {
+    height: 550px;
+    width: 450px;
+    border-radius: 30px;
+}
+
+.about .history {
+    margin-top: 150px;
+}
+
+.about .history-title {
+    text-align: center;
+}
