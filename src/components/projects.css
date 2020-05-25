@@ -1,6 +1,5 @@
 .projects {
     min-height: 100vh;
-    background-color: #ff4643;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -14,4 +13,16 @@
 .projects .projects-intro h1 {
     font-weight: 700;
     font-size: 150px;
+}
+
+.projects .technical-projects .technical-projects-title {
+    text-align: center;
+}
+
+.projects .illustrations {
+    padding: 50px;
+}
+
+.projects .illustrations .illustrations-title {
+    text-align: center;
 }

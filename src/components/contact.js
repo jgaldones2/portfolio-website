@@ -15,7 +15,7 @@ function Contact(props) {
     position: relative;
     color: black;
 
-    &:before {
+    &::before {
       background-color: ${currentTheme.pageColor};
     }
 
@@ -24,30 +24,41 @@ function Contact(props) {
     } 
   `;
 
+  const Overlay = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: ${currentTheme.pageColor};
+  `;
+
   function handleClick() {
     props.toggle();
   };
 
   return (
-    <div className='popup'>
-      <div className='popup-content'>
-        <div className='close-button'>
-          <span className='close' onClick={ handleClick }>
-            &times;
-          </span>
-        </div>
-        <div className='contact-info'>
-          <h3>Contact Me!</h3>
-          <Email href='mailto:jygaldones@gmail.com'>
-            { Info.email }
-          </Email>
-        </div>
-        <div className='social'>
-          <h3>Social</h3>
-          <SocialMedia />
+    <Overlay>
+      <div className='popup'>
+        <div className='popup-content'>
+          <div className='close-button'>
+            <span className='close' onClick={ handleClick }>
+              &times;
+            </span>
+          </div>
+          <div className='contact-info'>
+            <h3>Contact Me!</h3>
+            <Email href='mailto:jygaldones@gmail.com'>
+              { Info.email }
+            </Email>
+          </div>
+          <div className='social'>
+            <h3>Social</h3>
+            <SocialMedia />
+          </div>
         </div>
       </div>
-    </div>
+    </Overlay>
   );
 }
 

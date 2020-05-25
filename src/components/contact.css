@@ -63,10 +63,13 @@
     align-items: center;
 }
 
+.social h3 {
+    position: relative;
+}
+
 .social h3::after {
     content: 'ly Awkward';
     display: none;
-    transition: 3s;
 }
 
 .social h3:hover::after {

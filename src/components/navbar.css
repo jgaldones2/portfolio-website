@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: transparent;
@@ -43,7 +43,6 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -51,4 +50,27 @@
 .nav a:hover::before, .contact a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .icon {
+        display: inline-flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
 }
