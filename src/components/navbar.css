@@ -53,13 +53,18 @@
 }
 
 .icon {
-    display: none;
+    display: none; 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .main-nav {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .brand img {
+        width: 60px;
+        height: 40px;
     }
 
     .icon {

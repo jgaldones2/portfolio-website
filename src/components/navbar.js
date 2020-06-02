@@ -51,7 +51,7 @@ function MainNav() {
       { contact ? <Contact toggle={ togglePopup } style={navStyle} /> : null }
       <div className='icon'>
         <a className='bars' href='javascript:void(0)'>
-          <FontAwesomeIcon icon={faBars} size='2x' color={`${currentTheme.fontColor}`} />
+          <FontAwesomeIcon icon={faBars} size='1x' color={`${currentTheme.fontColor}`} />
         </a>
       </div>
     </div>

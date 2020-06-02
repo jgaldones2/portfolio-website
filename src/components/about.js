@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import History from './history';
 import Footer from './footer';
@@ -6,15 +6,21 @@ import './about.css';
 import aboutData from '../static/aboutData';
 import ThemeContext from '../context/ThemeContext';
 import AppTheme from '../context/AppTheme';
+import Parallax from 'parallax-js';
 
 function About() {
   const page = useContext(ThemeContext);
   const currentTheme = AppTheme[page];
 
+  useEffect(() => {
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  });
+
   return(
     <div className='about' style={{ backgroundColor:`${currentTheme.pageColor}` }}>
-      <div className='about-intro'>
-        <h1 style={{ color: `${currentTheme.fontColor}` }}>ABOUT.</h1>
+      <div data-relative-input='true' id='scene' className='about-intro'>
+        <h1 data-depth='0.3' style={{ color: `${currentTheme.fontColor}` }}>ABOUT.</h1>
       </div>
       <div className='summary'>
         <Container style={{minHeight: '100vh;'}}>

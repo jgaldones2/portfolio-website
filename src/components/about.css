@@ -13,7 +13,7 @@
 
 .about .about-intro h1 {
     font-weight: 700;
-    font-size: 170px;
+    font-size: 200px;
 }
 
 .about .summary {
@@ -27,7 +27,6 @@
 
 .about .summary .profile-pic {
     height: 100%;
-    padding-top: 5px;
     display: flex;
     justify-content: center;
 }
@@ -46,4 +45,34 @@
 .about .history-title {
     text-align: center;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .about .about-intro h1 {
+        font-size: 150px;
+    }
+
+    .about .summary .profile-pic img {
+        height: 450px;
+        width: 350px;
+    }
+
+    .about .summary p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about .about-intro h1 {
+        font-size: 100px;
+    }
+
+    .about .summary .profile-pic img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .about .summary p {
+        font-size: 13px;
+    }
 }
