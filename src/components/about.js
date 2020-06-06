@@ -19,18 +19,18 @@ function About() {
 
   return(
     <div className='about' style={{ backgroundColor:`${currentTheme.pageColor}` }}>
-      <div data-relative-input='true' id='scene' className='about-intro'>
+      <div data-relative-input='true' data-hover-only='true' id='scene' className='about-intro'>
         <h1 data-depth='0.3' style={{ color: `${currentTheme.fontColor}` }}>ABOUT.</h1>
       </div>
       <div className='summary'>
         <Container style={{minHeight: '100vh;'}}>
           <Row>
-            <Col>
+            <Col md={6}>
               <div className='profile-pic'>
                 <img alt='pfp' src={'../images/profilepic.jpg'} />
               </div>
             </Col>
-            <Col>
+            <Col md={6}>
               <div className='general' style={{ color:`${currentTheme.fontColor}` }}>
                 <p>{aboutData.General}</p>
               </div>

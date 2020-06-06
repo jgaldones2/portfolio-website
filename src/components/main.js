@@ -3,6 +3,7 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import Intro from './intro';
 import About from './about';
 import Projects from './projects';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function Main(changeContext) {
   function usePageViews() {

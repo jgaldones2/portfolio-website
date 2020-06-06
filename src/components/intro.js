@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import AppTheme from '../context/AppTheme';
 import ThemeContext from '../context/ThemeContext';
 import Parallax from 'parallax-js';
+import { Transition } from 'react-transition-group';
 import Sketch from 'react-p5';
 import './intro.css'
 
@@ -130,7 +131,7 @@ function Intro() {
   }
 
   return (
-    <div data-relative-input='true' className='intro' id='scene' style={{backgroundColor: `${currentTheme.pageColor}`}}>
+    <div data-relative-input='true' data-hover-only='true' className='intro' id='scene' style={{backgroundColor: `${currentTheme.pageColor}`, color: `${currentTheme.fontColor}`}}>
       {/* <Sketch className='p5' setup={setup} draw={draw}  style={{zIndex: '1'}}/> */}
       <div data-depth='0.3'>
         <div className='intro-title'>

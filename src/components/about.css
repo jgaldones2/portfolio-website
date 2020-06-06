@@ -22,7 +22,7 @@
 }
 
 .about .summary p {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .about .summary .profile-pic {
@@ -32,8 +32,9 @@
 }
 
 .about .summary .profile-pic img {
-    height: 550px;
-    width: 450px;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
     border-radius: 30px;
 }
 
@@ -51,28 +52,10 @@
     .about .about-intro h1 {
         font-size: 150px;
     }
-
-    .about .summary .profile-pic img {
-        height: 450px;
-        width: 350px;
-    }
-
-    .about .summary p {
-        font-size: 17px;
-    }
 }
 
 @media screen and (max-width: 500px) {
     .about .about-intro h1 {
         font-size: 100px;
-    }
-
-    .about .summary .profile-pic img {
-        height: 350px;
-        width: 250px;
-    }
-
-    .about .summary p {
-        font-size: 13px;
     }
 }

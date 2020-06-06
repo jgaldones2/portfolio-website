@@ -9,13 +9,6 @@ export default  {
     Timeline:[
         {
             month: 'May',
-            year: '1999',
-            title: 'A Star is Born',
-            location: 'Torrance, CA',
-            info: 'Legend has it he was born palming a basketball with his left hand and curling a 60lb. dumbell with his right.'
-        },
-        {
-            month: 'May',
             year: '2017',
             title: 'Accepted to USC',
             location: 'Los Angeles, CA',
@@ -48,6 +41,15 @@ export default  {
             title: 'Back to Phyn',
             location: 'Torrance, CA',
             info: 'Rejoined Phyn for the second consecutive summer as a Cloud Engineering Intern.'
+        },
+        {
+            month: 'May',
+            year: '2020',
+            title: 'Joined USC Data Science/Parallel Computing Lab',
+            location: 'Los Angeles, CA',
+            info: 'Accepted to the Viterbi Summer Undergraduate Research Program. Joined the USC Data Science/' +
+            'Parallel Computing Lab as an Undergraduate Research Assistant. Focused on memory access prediction ' +
+            'for data prefetching.',
         },
         {
             month: 'June',
