@@ -4,9 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
     background-color: transparent;
     position: fixed;
     width: 100%;
@@ -16,11 +17,11 @@
 
 .main-nav a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .brand img {
-    width: 75px;
-    height: 50px;
+    width: 60px;
 }
 
 .nav {
@@ -56,17 +57,7 @@
     display: none; 
 }
 
-@media screen and (max-width: 700px) {
-    .main-nav {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .brand img {
-        width: 60px;
-        height: 40px;
-    }
-
+@media screen and (max-width: 600px) {
     .icon {
         display: inline-flex;
     }
@@ -77,5 +68,9 @@
 
     .contact {
         display: none;
+    }
+
+    .brand img {
+        width: 28.5px;
     }
 }

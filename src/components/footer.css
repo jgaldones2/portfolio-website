@@ -1,9 +1,47 @@
 .footer-container {
     width: 100vw;
-    height: 10vh;
+    height: 6vh;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.footer-container .copyright p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    p {
+        font-size: 8px;
+    }
 }

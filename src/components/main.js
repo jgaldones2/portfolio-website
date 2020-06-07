@@ -10,7 +10,6 @@ function Main(changeContext) {
     let location = useLocation();
     useEffect(() => {
       changeContext.changeContext(location.pathname);
-      console.log(location.pathname);
     }, [location]);
   }
 

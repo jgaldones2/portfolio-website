@@ -1,5 +1,6 @@
 .projects {
     min-height: 100vh;
+    width: 100vw; 
     font-family: 'Raleway', sans-serif;
 }
 
@@ -8,21 +9,153 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    margin-bottom: 75px;
 }
 
 .projects .projects-intro h1 {
     font-weight: 700;
-    font-size: 175px;
+    /* font-size: 175px; */
+    font-size: 14vw;
+}
+
+.projects .technical-projects {
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
 }
 
 .projects .technical-projects .technical-projects-title {
     text-align: center;
+    font-size: 40px;
+}
+
+.projects .technical-projects .technical-projects-description {
+    font-size: 20px;
+    text-align: center;
 }
 
 .projects .illustrations {
-    padding: 50px;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
 }
 
 .projects .illustrations .illustrations-title {
     text-align: center;
+    font-size: 40px;
+}
+
+.projects .illustrations .illustrations-description {
+    font-size: 20px;
+    text-align: center;
+} 
+
+@media screen and (max-width: 1024px) {
+    /* .projects .projects-intro h1 {
+        font-size: 130px;
+    } */
+
+    .projects .technical-projects .technical-projects-title {
+        font-size: 45px;
+    }
+
+    .projects .illustrations .illustrations-title {
+        font-size: 45px;
+    }
+
+    .projects .technical-projects .technical-projects-description {
+        font-size: 25px;
+    }
+
+    .projects .illustrations .illustrations-description {
+        font-size: 25px;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    /* .projects .projects-intro h1 {
+        font-size: 110px;
+    } */
+
+    .projects .technical-projects .technical-projects-title {
+        font-size: 40px;
+    }
+
+    .projects .illustrations .illustrations-title {
+        font-size: 40px;
+    }
+
+    .projects .technical-projects .technical-projects-description {
+        font-size: 22px;
+    }
+
+    .projects .illustrations .illustrations-description {
+        font-size: 22px;
+    } 
+}
+
+@media screen and (max-width: 425px) {
+    /* .projects .projects-intro h1 {
+        font-size: 60px;
+    } */
+
+    .projects .technical-projects .technical-projects-title {
+        font-size: 37px;
+    }
+
+    .projects .illustrations .illustrations-title {
+        font-size: 37px;
+    }
+
+    .projects .technical-projects .technical-projects-description {
+        font-size: 20px;
+    }
+
+    .projects .illustrations .illustrations-description {
+        font-size: 20px;
+    } 
+}
+
+@media screen and (max-width: 375px) {
+    /* .projects .projects-intro h1 {
+        font-size: 50px;
+    } */
+
+    .projects .technical-projects .technical-projects-title {
+        font-size: 35px;
+    }
+
+    .projects .illustrations .illustrations-title {
+        font-size: 35px;
+    }
+
+    .projects .technical-projects .technical-projects-description {
+        font-size: 17px;
+    }
+
+    .projects .illustrations .illustrations-description {
+        font-size: 17px;
+    } 
+}
+
+@media screen and (max-width: 320px) {
+    /* .projects .projects-intro h1 {
+        font-size: 45px;
+    } */
+
+    .projects .technical-projects .technical-projects-title {
+        font-size: 30px;
+    }
+
+    .projects .illustrations .illustrations-title {
+        font-size: 30px;
+    }
+
+    .projects .technical-projects .technical-projects-description {
+        font-size: 15px;
+    }
+
+    .projects .illustrations .illustrations-description {
+        font-size: 15px;
+    } 
 }

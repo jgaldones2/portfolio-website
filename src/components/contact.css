@@ -1,15 +1,15 @@
 .popup {
     position: fixed;
     z-index: 100;
-    width: 95vw;
-    height: 95vh;
+    width: 97vw;
+    height: 97vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     font-family: 'Raleway', sans-serif;
     border-radius: 10px;
-}
+} 
 
 .popup-content {
     display: flex;

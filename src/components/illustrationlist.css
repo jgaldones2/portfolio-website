@@ -1,0 +1,81 @@
+.title  {
+    font-size: 35px;
+}
+
+.date {
+    font-size: 20px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title  {
+        font-size: 30px;
+    }
+    
+    .date {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title  {
+        font-size: 30px;
+    }
+    
+    .date {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title  {
+        font-size: 28px;
+    }
+    
+    .date {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title  {
+        font-size: 25px;
+    }
+    
+    .date {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title  {
+        font-size: 25px;
+    }
+    
+    .date {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+}

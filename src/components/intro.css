@@ -1,49 +1,27 @@
 .intro {
     min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.landing {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
     text-align: center;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
 }
 
 .intro-title h1 {
-    font-size: 125px;
+    font-size: 10vw;
+     /* font-size: 150px; */
     font-weight: 700;
-    font-style: italic;
 } 
 
 .intro-subtitle h2 {
-    font-size: 30px;
-    font-style: italic;
+    font-size: 3vw;
+    /* font-size: 30px; */
     font-weight: 400;
-}
-
-/* @media screen and (max-width: 900px) {
-    .intro-title h1 {
-        font-size: 100px;
-    }
-} */
-
-@media screen and (max-width: 800px) {
-    .intro-title h1 {
-        font-size: 100px;
-    }
-
-    .intro-subtitle h2 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .intro-title h1 {
-        font-size: 75px;
-    }
-
-    .intro-subtitle h2 {
-        font-size: 20px;
-    }
 }

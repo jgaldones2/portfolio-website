@@ -45,7 +45,7 @@ export default  {
         {
             month: 'May',
             year: '2020',
-            title: 'Joined USC Data Science/Parallel Computing Lab',
+            title: 'Joined USC Data Science Lab',
             location: 'Los Angeles, CA',
             info: 'Accepted to the Viterbi Summer Undergraduate Research Program. Joined the USC Data Science/' +
             'Parallel Computing Lab as an Undergraduate Research Assistant. Focused on memory access prediction ' +

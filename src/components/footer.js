@@ -2,13 +2,15 @@ import React from 'react';
 import './footer.css';
 import SocialMedia from './socialmedia';
 
-function Footer() {
+function Footer(props) {
+  const page = props.page;
+
   return(
     <div className='footer-container'>
       <div className='copyright'>
-        <h5>Copyright &copy; 2020 John Galdones</h5>
+        <p>Copyright &copy; 2020 John Galdones</p>
       </div>
-      <SocialMedia />
+      <SocialMedia size='1x' page={page}/>
     </div>
   );
 }
