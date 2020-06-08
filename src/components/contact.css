@@ -1,3 +1,8 @@
+@keyframes popup {
+    from {top: 120%;}
+    to {top:  50%;}
+}
+
 .popup {
     position: fixed;
     z-index: 100;
@@ -9,6 +14,9 @@
     background-color: white;
     font-family: 'Raleway', sans-serif;
     border-radius: 10px;
+    animation-name: popup;
+    animation-duration: 0.5s;
+    /* animation-timing-function: ease; */
 } 
 
 .popup-content {
@@ -20,10 +28,12 @@
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
+    color: #000;
 }
 
 .close {
     cursor: pointer;
+    font-size: 35px;
 }
 
 .contact-info {
@@ -74,4 +84,16 @@
 
 .social h3:hover::after {
     display: inline-flex;
+}
+
+@media screen and (max-width: 700px) {
+    .contact-info a {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-info a {
+        font-size: 25px;
+    }
 }

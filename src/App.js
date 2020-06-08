@@ -4,6 +4,7 @@ import './App.css';
 import MainNav from './components/navbar';
 import Intro from './components/intro';
 import About from './components/about';
+import Skills from './components/skills';
 import Projects from './components/projects';
 import Footer from './components/footer';
 
@@ -14,7 +15,7 @@ function App() {
   var isInViewport = (element) => {
     var bounding = element.getBoundingClientRect();
     return(
-      bounding.top <= 0 &&
+      bounding.top <= 1 &&
       bounding.bottom >= 1
     );
   }
@@ -22,6 +23,7 @@ function App() {
   useEffect(() => {
     const intro = document.getElementById('intro');
     const about = document.getElementById('about');
+    const skills = document.getElementById('skills');
     const projects = document.getElementById('projects');
 
     // console.log(intro.getBoundingClientRect());
@@ -33,7 +35,9 @@ function App() {
         setPage('intro');
       } else if(isInViewport(about)) {
         setPage('about');
-      } else if(isInViewport(projects)) {
+      } else if(isInViewport(skills)) {
+        setPage('skills');
+      }else if(isInViewport(projects)) {
         setPage('projects');
       }
     });
@@ -49,15 +53,17 @@ function App() {
   }
 
   return (
-    <div>
-      
-      {/* <div style={{position:'fixed'}}>{page}</div> */}
-      <MainNav modalState={ modal } toggle={ toggleModal } page={ page } />
-      {/* <Main changeContext={ changeContext } /> */}
-      <Intro />
-      <About />
-      <Projects />
-      <Footer page={page}/>
+    <div id='app-body'>
+      <div id='header'>
+        <MainNav modalState={ modal } toggle={ toggleModal } page={ page } />
+      </div>
+      <div id='content'>
+        <Intro />
+        <About />
+        <Skills />
+        <Projects />
+        <Footer page={page}/>
+      </div>
     </div>
   );
 }

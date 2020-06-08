@@ -14,7 +14,7 @@ function IllustrationList() {
               <p className='description'>{item.description}</p>
             </Col>
             <Col md={5} style={{display:'flex', justifyContent:'center'}}>
-              <img alt={item.title} src={item.image} style={{maxWidth:'90%', height:'auto', objectFit:'contain'}} />
+              <img className='illustration-img' alt={item.title} src={item.image} />
             </Col>
           </Row>
       ))

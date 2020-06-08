@@ -20,10 +20,11 @@
 }
 
 .about .summary {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     padding-right: 12.5vw;
     padding-left: 12.5vw;
+    min-height: 100vh;
 }
 
 .about .summary p {
@@ -69,7 +70,8 @@
 }
 
 .about .history {
-    margin-top: 150px;
+    margin-top: 10vh;
+    margin-bottom: 10vh; 
     padding-bottom: 50px;
     padding-right: 12.5vw;
     padding-left: 12.5vw;

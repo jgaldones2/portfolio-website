@@ -8,7 +8,7 @@ import AppTheme from '../context/AppTheme';
 
 function About() {
   const currentTheme = AppTheme['about'];
-  const nextTheme = AppTheme['projects'];
+  const nextTheme = AppTheme['skills'];
 
   useEffect(() => {
     var scene = document.getElementById('about-scene');
@@ -40,7 +40,7 @@ function About() {
           <Row>
             <Col>
               <div className='resume-container'>
-                <form action='Resume.pdf' target='_blank'>
+                <form action='./files/Resume.pdf' target='_blank'>
                   <input type='submit' value='My Resume' className='resume-button' />
                 </form>
               </div>

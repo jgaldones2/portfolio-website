@@ -29,7 +29,7 @@ function Contact(props) {
 
   return (
     <div className='popup'>
-      <div className='popup-content' style={{color:'#000'}}>
+      <div className='popup-content'>
         <div className='close-button'>
           <span className='close' onClick={ handleClick }>
             &times;

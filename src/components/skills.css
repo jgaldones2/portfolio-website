@@ -1,0 +1,64 @@
+.skills  {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif
+}
+
+.skills .skills-intro {
+    min-height: 100vh;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skills-intro h1 {
+    font-size: 16vw;
+    font-weight: 700;
+}
+
+.skills .skills-list {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+}
+
+.skills .skills-list .skills-section {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.skills .skills-list .skills-section h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.skills .skills-list .skills-section h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.skills .skills-list .skills-section .item-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: flex-wrap 0.25s ease;
+}
+
+.skills .skills-list .skills-section .item-container .item {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    color:  #fff;
+    border: solid 1px #fff;
+}
+
+.skills .skills-list .skills-section .item-container .item:hover {
+    background-color: #000;
+}

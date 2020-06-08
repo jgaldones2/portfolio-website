@@ -58,5 +58,58 @@ export default  {
             location: 'San Diego, CA',
             info: 'Begain my internship at ASML as a Software Engineering Intern.'
         }
-    ]
+    ],
+    Skills: {
+        Technical: {
+            Languages: [
+                'Java',
+                'Python',
+                'C++',
+                'HTML',
+                'CSS',
+                'JavaScript',
+                'Swift',
+                'SQL',
+            ],
+            Frameworks: [
+                'React.js',
+                'React Native',
+                'Node.js',
+                'JUnit',
+                'Selenium',
+                'MongoDB',
+                'Unix',
+            ],
+            Miscellaneous: [
+                'AWS',
+                'UI/UX',
+                'JIRA',
+                'Cucumber',
+                'Microsft Excel',
+                'Agile Methodologies',
+                'Git',
+            ]
+        },
+        Creative: [
+            'Adobe Photoshop',
+            'Adobe Illustrator',
+            'Adobe InDesign',
+        ],
+        Courses: {
+            Technical: [
+                'Software Engineering',
+                'Introduction to Artificial Intelligence',
+                'Introduction Algorithms and Theory of Computing',
+                'Principles of Software Development',
+                'Data Structures and Object-Oriented Programming',
+            ],
+            Business: [
+                'Technology Entrepreneurship',
+                'Operations Management',
+                'Business Finance',
+                'Marketing Fundamentals',
+                'Applied Business Statistics',
+            ],
+        },
+    },
 }

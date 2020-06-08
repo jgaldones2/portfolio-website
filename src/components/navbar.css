@@ -18,6 +18,7 @@
 .main-nav a {
     text-decoration: none;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .brand img {
@@ -60,6 +61,7 @@
 @media screen and (max-width: 600px) {
     .icon {
         display: inline-flex;
+        cursor: pointer;
     }
 
     .nav {

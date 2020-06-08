@@ -34,6 +34,7 @@ function MainNav(props) {
       <div className='nav'>
         <NavItem onClick={() => scrollTo('intro')}>Intro</NavItem>
         <NavItem onClick={() => scrollTo('about')}>About</NavItem>
+        <NavItem onClick={() => scrollTo('skills')}>Skills</NavItem>
         <NavItem onClick={() => scrollTo('projects')}>Projects</NavItem>
       </div>
       <div className='contact'>
@@ -41,9 +42,9 @@ function MainNav(props) {
       </div>
       { props.modalState ? <Contact toggle={ props.toggle } page={props.page} style={navStyle} /> : null }
       <div className='icon'>
-        <a className='bars' href='javascript:void(0)'>
+        <span className='bars' onClick={ props.toggle }>
           <FontAwesomeIcon icon={faBars} size='1x' color={`${currentTheme.fontColor}`} />
-        </a>
+        </span>
       </div>
     </div>
   );
