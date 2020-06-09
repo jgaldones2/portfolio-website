@@ -31,7 +31,7 @@ function Contact(props) {
       <div className='popup'>
         <div className='popup-content'>
           <div className='close-button'>
-            <span className='close' onClick={ handleClick }>
+            <span className='close' onClick={ handleClick } style={{color:`${currentTheme.pageColor}`}}>
               &times;
             </span>
           </div>

@@ -5,6 +5,7 @@ import illustrations from '../static/illustrations';
 import IllustrationList from './illustrationlist';
 import technicalProjects from '../static/technicalProjects';
 import Parallax from 'parallax-js';
+import TechnicalProjectsList from './technicalprojectslist';
 
 function Projects() {
   const currentTheme = AppTheme['projects'];
@@ -22,6 +23,7 @@ function Projects() {
       <div className='technical-projects'>
         <h1 className='technical-projects-title'>Technical Projects</h1>
         <p className='technical-projects-description'>{ technicalProjects.General }</p>
+        <TechnicalProjectsList />
       </div>
       <div className='illustrations'>
         <h1 className='illustrations-title'>Illustrations</h1>

@@ -12,7 +12,8 @@ export default  {
             year: '2017',
             title: 'Accepted to USC',
             location: 'Los Angeles, CA',
-            info: 'Accepted to USC as an Applied Math major.'
+            info: 'Accepted to USC as an Applied Math major (switched to Computer Science/Business Administration ' +
+            'immediately after).'
         },
         {
             month: 'July',
@@ -43,12 +44,27 @@ export default  {
             info: 'Rejoined Phyn for the second consecutive summer as a Cloud Engineering Intern.'
         },
         {
+            month: 'September',
+            year: '2019',
+            title: 'SC Solar Car Team',
+            location: 'Los Angeles, CA',
+            info: 'Joined the SC Solar Car Team as a Strategy Team Lead. In charge of developing the driver\'s display ' +
+            'of all important metrics.',
+        },
+        {
+            month: 'January',
+            year: '2020',
+            title: 'Corpus Callosum',
+            location: 'Los Angeles, CA',
+            info: 'Joined Corpus Callosum as a general member.'
+        },
+        {
             month: 'May',
             year: '2020',
-            title: 'Joined USC Data Science Lab',
+            title: 'Research @ USC Data Science Lab',
             location: 'Los Angeles, CA',
             info: 'Accepted to the Viterbi Summer Undergraduate Research Program. Joined the USC Data Science/' +
-            'Parallel Computing Lab as an Undergraduate Research Assistant. Focused on memory access prediction ' +
+            'Parallel Computing Lab as an Undergraduate Research Assistant. Research topic included memory access prediction ' +
             'for data prefetching.',
         },
         {
@@ -70,15 +86,20 @@ export default  {
                 'JavaScript',
                 'Swift',
                 'SQL',
+                'Go'
             ],
             Frameworks: [
                 'React.js',
                 'React Native',
                 'Node.js',
+                'Gatsby.js',
+                'GraphQL',
                 'JUnit',
                 'Selenium',
                 'MongoDB',
+                'MySQL',
                 'Unix',
+                'Firebase'
             ],
             Miscellaneous: [
                 'AWS',

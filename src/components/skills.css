@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .skills .skills-list .skills-section .item-container .item {
@@ -56,10 +57,12 @@
     font-size: 15px;
     color:  #fff;
     border: solid 1px #fff;
-    transition: background-color 0.2s  ease;
+    transition: background-color 0.2s  ease-out, font-size 0.2s ease-out;
     cursor: default;
 }
 
 .skills .skills-list .skills-section .item-container .item:hover {
-    transition: background-color 0.2s  ease;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in, font-size 0.2s ease-in;
 }

@@ -25,7 +25,8 @@
     font-family: 'Raleway', sans-serif;
     border-radius: 10px;
     animation-name: popup;
-    animation-duration: 0.5s;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
 }
 
 .popup-content {
