@@ -1,6 +1,16 @@
 @keyframes popup {
-    from {top: 120%;}
+    from {top: 200%;}
     to {top:  50%;}
+}
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    top: 0;
+    left: 0;
 }
 
 .popup {
@@ -11,13 +21,12 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #fff;
     font-family: 'Raleway', sans-serif;
     border-radius: 10px;
     animation-name: popup;
     animation-duration: 0.5s;
-    /* animation-timing-function: ease; */
-} 
+}
 
 .popup-content {
     display: flex;
@@ -45,7 +54,7 @@
 }
 
 .contact-info a {
-    font-size: 50px;
+    font-size: 55px;
     position: relative;
 }
 
@@ -95,5 +104,5 @@
 @media screen and (max-width: 500px) {
     .contact-info a {
         font-size: 25px;
-    }
+    } 
 }

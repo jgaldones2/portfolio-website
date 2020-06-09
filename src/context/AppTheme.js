@@ -19,8 +19,8 @@ const AppTheme = {
     },
     creative: '#F2B03F',
     courses: {
-      cs: '#2ADAB7',
-      business: '#9248CA',
+      cs: '#C28CE6',
+      business: '#929EEC',
     },
     logo: '../images/logo-skills.png',
 

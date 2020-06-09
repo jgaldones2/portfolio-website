@@ -8,7 +8,6 @@ function History(props) {
     return props.timeline.map((item) => {
       return (
         <VerticalTimelineElement
-          className='vertical-timeline-element'
           date={ item.month + ' ' + item.year }
           iconStyle={{ backgroundColor:'white',}}
           >
@@ -19,7 +18,7 @@ function History(props) {
       );
     });
   }
-
+ 
   return (
     <VerticalTimeline>
       <TimelineElements />

@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import AppTheme from '../context/AppTheme';
 import Parallax from 'parallax-js';
 import './intro.css'

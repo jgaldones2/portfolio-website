@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col } from  'react-bootstrap';
 import aboutData from '../static/aboutData';
 import AppTheme from '../context/AppTheme';
+import SkillItem from './skillitem';
 import Parallax from 'parallax-js';
 import './skills.css';
 
@@ -21,8 +22,8 @@ function Skills() {
         <Col lg={4}>
           <h3>Languages</h3>
           <div className='item-container'>
-            {aboutData.Skills.Technical.Languages.map(misc => (
-              <span className='item' style={{backgroundColor:`${skills.technical.languages}`}}>{ misc }</span>
+            {aboutData.Skills.Technical.Languages.map(language => (
+              <SkillItem color={skills.technical.languages} text={language} />
             ))}
           </div>
         </Col>
@@ -32,8 +33,8 @@ function Skills() {
         <Col lg={4}>
           <h3>Frameworks</h3>
           <div className='item-container'>
-            {aboutData.Skills.Technical.Frameworks.map(misc => (
-              <span className='item' style={{backgroundColor:`${skills.technical.frameworks}`}}>{ misc }</span>
+            {aboutData.Skills.Technical.Frameworks.map(framework => (
+              <SkillItem color={skills.technical.frameworks} text={framework} />
             ))}
           </div>
         </Col>
@@ -44,7 +45,7 @@ function Skills() {
           <h3>Miscellaneous</h3>
           <div className='item-container'>
             {aboutData.Skills.Technical.Miscellaneous.map(misc => (
-              <span className='item' style={{backgroundColor:`${skills.technical.misc}`}}>{ misc }</span>
+              <SkillItem color={skills.technical.misc} text={misc} />
             ))}
           </div>
         </Col>
@@ -57,7 +58,7 @@ function Skills() {
       <Col>
         <div className='item-container'>
           {aboutData.Skills.Creative.map(item => (
-            <span className='item' style={{backgroundColor:`${skills.creative}`}}>{ item }</span>
+            <SkillItem color={skills.creative} text={item} />
           ))}
         </div>
       </Col>
@@ -71,7 +72,7 @@ function Skills() {
           <h3>Computer Science</h3>
           <div className='item-container'>
             {aboutData.Skills.Courses.Technical.map(course =>  (
-              <span className='item' style={{backgroundColor:`${skills.courses.cs}`}}>{ course }</span>
+              <SkillItem color={skills.courses.cs} text={course} />
             ))}
           </div>
         </Col>
@@ -82,7 +83,7 @@ function Skills() {
           <h3>Business</h3>
           <div className='item-container'>
             {aboutData.Skills.Courses.Business.map(course =>  (
-              <span className='item' style={{backgroundColor:`${skills.courses.business}`}}>{ course }</span>
+              <SkillItem color={skills.courses.business} text={course} />
             ))}
           </div>
         </Col>
