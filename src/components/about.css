@@ -40,7 +40,6 @@
 
 .about .summary .profile-pic img {
     max-width: 80%;
-    height: auto;
     object-fit: contain;
     border-radius: 30px;
     transition: max-width 0.5s ease;

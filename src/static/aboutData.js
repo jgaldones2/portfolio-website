@@ -61,7 +61,7 @@ export default  {
         {
             month: 'May',
             year: '2020',
-            title: 'Research @ USC Data Science Lab',
+            title: 'USC Data Science Lab - Research',
             location: 'Los Angeles, CA',
             info: 'Accepted to the Viterbi Summer Undergraduate Research Program. Joined the USC Data Science/' +
             'Parallel Computing Lab as an Undergraduate Research Assistant. Research topic included memory access prediction ' +
@@ -70,9 +70,9 @@ export default  {
         {
             month: 'June',
             year: '2020',
-            title: 'Began Internship at ASML',
+            title: 'ASML - Internship',
             location: 'San Diego, CA',
-            info: 'Begain my internship at ASML as a Software Engineering Intern.'
+            info: 'Began my internship at ASML as a Software Engineering Intern.'
         }
     ],
     Skills: {
