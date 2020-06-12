@@ -21,7 +21,7 @@ function About() {
         <h1 data-depth='0.3'>ABOUT.</h1>
       </div>
       <div className='summary'>
-        <Container style={{minHeight: '100vh;'}}>
+        <Container style={{minHeight: '100vh'}}>
           <Row>
             <Col md={4}>
               <div className='profile-pic'>

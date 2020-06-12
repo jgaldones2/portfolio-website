@@ -23,7 +23,7 @@ function Skills() {
           <h3>Languages</h3>
           <div className='item-container'>
             {aboutData.Skills.Technical.Languages.map(language => (
-              <SkillItem color={skills.technical.languages} text={language} />
+              <SkillItem key={language} color={skills.technical.languages} text={language} />
             ))}
           </div>
         </Col>
@@ -34,7 +34,7 @@ function Skills() {
           <h3>Frameworks</h3>
           <div className='item-container'>
             {aboutData.Skills.Technical.Frameworks.map(framework => (
-              <SkillItem color={skills.technical.frameworks} text={framework} />
+              <SkillItem key={framework} color={skills.technical.frameworks} text={framework} />
             ))}
           </div>
         </Col>
@@ -45,7 +45,7 @@ function Skills() {
           <h3>Miscellaneous</h3>
           <div className='item-container'>
             {aboutData.Skills.Technical.Miscellaneous.map(misc => (
-              <SkillItem color={skills.technical.misc} text={misc} />
+              <SkillItem key={misc} color={skills.technical.misc} text={misc} />
             ))}
           </div>
         </Col>
@@ -58,7 +58,7 @@ function Skills() {
       <Col>
         <div className='item-container'>
           {aboutData.Skills.Creative.map(item => (
-            <SkillItem color={skills.creative} text={item} />
+            <SkillItem key={item} color={skills.creative} text={item} />
           ))}
         </div>
       </Col>
@@ -72,7 +72,7 @@ function Skills() {
           <h3>Computer Science</h3>
           <div className='item-container'>
             {aboutData.Skills.Courses.Technical.map(course =>  (
-              <SkillItem color={skills.courses.cs} text={course} />
+              <SkillItem key={course} color={skills.courses.cs} text={course} />
             ))}
           </div>
         </Col>
@@ -83,7 +83,7 @@ function Skills() {
           <h3>Business</h3>
           <div className='item-container'>
             {aboutData.Skills.Courses.Business.map(course =>  (
-              <SkillItem color={skills.courses.business} text={course} />
+              <SkillItem key={course} color={skills.courses.business} text={course} />
             ))}
           </div>
         </Col>

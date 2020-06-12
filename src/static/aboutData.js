@@ -103,6 +103,7 @@ export default  {
             ],
             Miscellaneous: [
                 'AWS',
+                'AJAX',
                 'UI/UX',
                 'JIRA',
                 'Cucumber',
@@ -115,6 +116,7 @@ export default  {
             'Adobe Photoshop',
             'Adobe Illustrator',
             'Adobe InDesign',
+            'Figma',
         ],
         Courses: {
             Technical: [

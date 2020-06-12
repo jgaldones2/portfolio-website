@@ -1,0 +1,16 @@
+.item {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    color:  #fff;
+    border: solid 1px #fff;
+    transition: background-color 0.2s  ease-out, font-size 0.2s ease-out;
+    cursor: default;
+}
+
+.item:hover {
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in, font-size 0.2s ease-in;
+}

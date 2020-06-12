@@ -11,6 +11,7 @@ import Footer from './components/footer';
 function App() {
   const [page, setPage] = useState('intro');
   const [modal, setModal] = useState(false);
+  const [projectModal, setProjectModal] = useState(false);
 
   var isInViewport = (element) => {
     var bounding = element.getBoundingClientRect();
@@ -52,18 +53,23 @@ function App() {
     }
   }
 
+  function toggleProjectModal() {
+    setProjectModal(!projectModal);
+    if(!projectModal) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'scroll';
+    }
+  }
+
   return (
-    <div id='app-body'>
-      <div id='header'>
-        <MainNav modalState={ modal } toggle={ toggleModal } page={ page } />
-      </div>
-      <div id='content'>
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-        <Footer page={page}/>
-      </div>
+    <div>
+      <MainNav modalState={ modal } toggle={ toggleModal } page={ page } />
+      <Intro />
+      <About />
+      <Skills />
+      <Projects modalState={ modal } toggle={ toggleProjectModal } />
+      <Footer page={page}/>
     </div>
   );
 }

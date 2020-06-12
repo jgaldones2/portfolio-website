@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import './skillitem.css'
 
 function SkillItem(props) {
   const Item = styled.span`

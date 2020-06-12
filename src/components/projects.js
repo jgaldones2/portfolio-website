@@ -7,7 +7,7 @@ import technicalProjects from '../static/technicalProjects';
 import Parallax from 'parallax-js';
 import TechnicalProjectsList from './technicalprojectslist';
 
-function Projects() {
+function Projects(props) {
   const currentTheme = AppTheme['projects'];
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function Projects() {
       <div className='technical-projects'>
         <h1 className='technical-projects-title'>Technical Projects</h1>
         <p className='technical-projects-description'>{ technicalProjects.General }</p>
-        <TechnicalProjectsList />
+        <TechnicalProjectsList modalState={props.modalState} toggle={props.toggle} />
       </div>
       <div className='illustrations'>
         <h1 className='illustrations-title'>Illustrations</h1>

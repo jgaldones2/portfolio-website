@@ -1,11 +1,36 @@
 #projects-container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+}
+
+.project {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.project h1 {
+    font-size: 35px;
+}
+
+.project p {
+    font-size: 18px;
+}
+
+
+.project-skills {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.tech-project {
-    padding: 60px;
-    
+    align-items: center;
 }

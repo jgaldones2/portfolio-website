@@ -1,6 +1,11 @@
-@keyframes popup {
+@keyframes popup-regular {
     from {top: 200%;}
     to {top:  50%;}
+}
+
+@keyframes popup-small {
+    from {left: 150%;}
+    to {left: 63%;}
 }
 
 .overlay {
@@ -24,12 +29,12 @@
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
     border-radius: 10px;
-    animation-name: popup;
+    animation-name: popup-regular;
     animation-duration: 0.75s;
     animation-timing-function: ease;
 }
 
-.popup-content {
+.popup-content-regular {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,6 +44,10 @@
     padding-left: 15px;
     padding-right: 15px;
     color: #000;
+}
+
+.popup-content-small {
+    display: none;
 }
 
 .close {
@@ -96,14 +105,49 @@
     display: inline-flex;
 }
 
-@media screen and (max-width: 700px) {
-    .contact-info a {
-        font-size: 35px;
+@media screen and (max-width: 600px) {
+    .popup {
+        width: 75vw;
+        height: 100vh;
+        border-radius: 0px;
+        top: 50%;
+        left: 63%;
+        overflow-x: hidden;
+        animation-name: popup-small;
+    }
+
+    .popup-content-regular {
+        display: none;
+    }
+
+    .popup-content-small {
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .popup-content-small #small-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    .popup-content-small #small-nav a {
+        font-size: 30px;
+    }
+
+    .popup-content-small .contact-info a {
+        font-size: 22px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .contact-info a {
-        font-size: 25px;
-    } 
+@media screen and (max-width: 400px) {
+    .popup-content-small .email a {
+        font-size: 17px;
+    }
 }

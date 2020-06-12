@@ -7,16 +7,16 @@ function IllustrationList() {
   function Illustrations() {
     return(
       illustrations.Illustrations.map(item => (
-          <Row style={{paddingTop:'10vh', paddingBottom:'10vh'}}>
-            <Col md={7} style={{textAlign:'center'}}>
-              <h1 className='title'>{item.title}</h1>
-              <h2 className='date'>{item.date}</h2>
-              <p className='description'>{item.description}</p>
-            </Col>
-            <Col md={5} style={{display:'flex', justifyContent:'center'}}>
-              <img className='illustration-img' alt={item.title} src={item.image} />
-            </Col>
-          </Row>
+        <Row key={item.title} style={{paddingTop:'3vh', paddingBottom:'10vh'}}>
+          <Col md={7} style={{textAlign:'center'}}>
+            <h1 className='title'>{item.title}</h1>
+            <h2 className='date'>{item.date}</h2>
+            <p className='description'>{item.description}</p>
+          </Col>
+          <Col md={5} style={{display:'flex', justifyContent:'center'}}>
+            <img className='illustration-img' alt={item.title} src={item.image} />
+          </Col>
+        </Row>
       ))
     );
   }

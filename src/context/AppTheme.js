@@ -27,7 +27,8 @@ const AppTheme = {
   },
   projects: {
     fontColor: '#fff55b',
-    pageColor: '#f95f3d',
+    // pageColor: '#f95f3d',
+    pageColor: '#8838E4',
     logo: '../images/logo-projects.png',
   }
 }
